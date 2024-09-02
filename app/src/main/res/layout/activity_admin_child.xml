@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fon"
+    tools:context=".admin.ActivityAdminChild">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvAdCh"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/bnAdChAdd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+    <Button
+        android:id="@+id/bnAdChAdd"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:backgroundTint="@color/mint"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Импортировать Excel таблицу"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="#777777"
+        android:backgroundTint="#777777"
+        android:iconifiedByDefault="false"
+        android:padding="4dp"
+        android:queryHint="Поиск детей"
+        android:searchHintIcon="@android:drawable/ic_menu_search"
+        android:searchIcon="@android:drawable/ic_menu_search"
+        app:circularflow_angles="8dp"
+        app:iconifiedByDefault="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:queryHint="Поиск" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

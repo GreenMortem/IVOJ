@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.ActivityAdminKnows">
+
+    <ImageView
+        android:id="@+id/ivFon"
+        android:layout_width="959dp"
+        android:layout_height="wrap_content"
+        android:background="#FEFEFE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05"
+        app:srcCompat="@drawable/mountains" />
+
+    <Button
+        android:id="@+id/bnODAD"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#D38B3A"
+        android:text="ОД"
+        app:layout_constraintEnd_toEndOf="@+id/bnKTDAD"
+        app:layout_constraintStart_toStartOf="@+id/bnKTDAD"
+        app:layout_constraintTop_toBottomOf="@+id/bnKTDAD" />
+
+    <Button
+        android:id="@+id/bnKTDAD"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#D38B3A"
+        android:text="КТД"
+        app:layout_constraintEnd_toEndOf="@+id/bnGamesAD"
+        app:layout_constraintStart_toStartOf="@+id/bnGamesAD"
+        app:layout_constraintTop_toBottomOf="@+id/bnGamesAD" />
+
+    <Button
+        android:id="@+id/bnLightAD"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#D38B3A"
+        android:text="Огонки"
+        app:layout_constraintEnd_toEndOf="@+id/bnODAD"
+        app:layout_constraintStart_toStartOf="@+id/bnODAD"
+        app:layout_constraintTop_toBottomOf="@+id/bnODAD" />
+
+    <Button
+        android:id="@+id/bnGamesAD"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="#D38B3A"
+        android:text="Игры"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <Button
+        android:id="@+id/bnSongsAD"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#D38B3A"
+        android:text="Песенник"
+        app:layout_constraintEnd_toEndOf="@+id/bnLightAD"
+        app:layout_constraintStart_toStartOf="@+id/bnLightAD"
+        app:layout_constraintTop_toBottomOf="@+id/bnLightAD" />
+
+    <Button
+        android:id="@+id/bnKnowsAD"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="#B53F19"
+        android:backgroundTint="#B53F19"
+        android:text="Знания"
+        android:visibility="visible"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bnAdmin"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/bnAdmin"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="#B53F19"
+        android:backgroundTint="#FF5722"
+        android:text="Администратор"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bnKnowsAD" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textViewLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/boogaloo"
+        android:text="IVOJ"
+        android:textColor="#EB9C40"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="@+id/toolbar" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.01"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:srcCompat="@drawable/logo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fon"
+    tools:context=".knows.ActivityGame">
+
+    <Button
+        android:id="@+id/bnAt"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="156dp"
+        android:backgroundTint="@color/mint"
+        android:text="Игры на внимание"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bnZal"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/mint"
+        android:text="Игры для зала"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/bnAt"
+        app:layout_constraintStart_toStartOf="@+id/bnAt"
+        app:layout_constraintTop_toBottomOf="@+id/bnAt" />
+
+    <Button
+        android:id="@+id/bnZnak"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/mint"
+        android:textColor="@color/black"
+        android:text="Игры на знакомства"
+        app:layout_constraintEnd_toEndOf="@+id/bnZal"
+        app:layout_constraintStart_toStartOf="@+id/bnZal"
+        app:layout_constraintTop_toBottomOf="@+id/bnZal" />
+
+    <Button
+        android:id="@+id/bnLid"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/mint"
+        android:textColor="@color/black"
+        android:text="Игры на лидерство"
+        app:layout_constraintEnd_toEndOf="@+id/bnZnak"
+        app:layout_constraintStart_toStartOf="@+id/bnZnak"
+        app:layout_constraintTop_toBottomOf="@+id/bnZnak" />
+
+    <Button
+        android:id="@+id/bnPod"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/mint"
+        android:textColor="@color/black"
+        android:text="Подвижные игры"
+        app:layout_constraintEnd_toEndOf="@+id/bnLid"
+        app:layout_constraintStart_toStartOf="@+id/bnLid"
+        app:layout_constraintTop_toBottomOf="@+id/bnLid" />
+
+    <Button
+        android:id="@+id/bnSploch"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/mint"
+        android:textColor="@color/black"
+        android:text="Игры на сплочение"
+        app:layout_constraintEnd_toEndOf="@+id/bnPod"
+        app:layout_constraintStart_toStartOf="@+id/bnPod"
+        app:layout_constraintTop_toBottomOf="@+id/bnPod" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

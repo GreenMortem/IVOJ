@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fon"
+    tools:context=".main.ActivityVojat">
+
+    <Button
+        android:id="@+id/bnKnows"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="24dp"
+        android:backgroundTint="#009688"
+        android:text="Знания"
+        android:textColor="#000000"
+        android:visibility="visible"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/bnPlan"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:layout_marginHorizontal="24dp"
+        android:backgroundTint="@color/mint"
+        android:text="Дети"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.23000002" />
+
+    <Button
+        android:id="@+id/bnInfo"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/mint"
+        android:text="Реестр детей"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/bnPlan"
+        app:layout_constraintStart_toStartOf="@+id/bnPlan"
+        app:layout_constraintTop_toBottomOf="@+id/bnPlan" />
+
+    <Button
+        android:id="@+id/bnExit"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="72dp"
+        android:backgroundTint="#009688"
+        android:text="Выход"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/bnInfo"
+        app:layout_constraintStart_toStartOf="@+id/bnInfo"
+        app:layout_constraintTop_toBottomOf="@+id/bnInfo" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="215dp"
+        android:layout_height="196dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/prof" />
+
+    <TextView
+        android:id="@+id/tvNameProf"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSernameProf"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvNameProf"
+        app:layout_constraintHorizontal_bias="0.63"
+        app:layout_constraintStart_toStartOf="@+id/tvNameProf"
+        app:layout_constraintTop_toBottomOf="@+id/tvNameProf" />
+
+    <TextView
+        android:id="@+id/tvPhoneProf"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvSernameProf"
+        app:layout_constraintStart_toStartOf="@+id/tvSernameProf"
+        app:layout_constraintTop_toBottomOf="@+id/tvSernameProf" />
+
+    <TextView
+        android:id="@+id/tvEmailProf"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvPhoneProf"
+        app:layout_constraintStart_toStartOf="@+id/tvPhoneProf"
+        app:layout_constraintTop_toBottomOf="@+id/tvPhoneProf" />
+
+    <TextView
+        android:id="@+id/tvOtrid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmailProf" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

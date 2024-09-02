@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="IVOJ"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+        tools:targetApi="31">
+        <activity
+            android:name=".vojat.ActivityKnowsVoj"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity
+            android:name=".vojat.ActivityAddChild"
+            android:exported="false" />
+        <activity
+            android:name=".vojat.ActivityReestr"
+            android:exported="false" />
+        <activity
+            android:name=".admin.ActivityAdminVoj"
+            android:exported="false" />
+        <activity
+            android:name=".admin.ActivityAdminChild"
+            android:exported="false" />
+        <activity
+            android:name=".admin.knowsad.ActivityAdminSongs"
+            android:exported="false" />
+        <activity
+            android:name=".admin.knowsad.ActivityAdminOD"
+            android:exported="false" />
+        <activity
+            android:name=".admin.knowsad.ActivityAdminLights"
+            android:exported="false" />
+        <activity
+            android:name=".admin.knowsad.ActivityAdminKTD"
+            android:exported="false" />
+        <activity
+            android:name=".admin.knowsad.gamesad.ActivityAdminZnak"
+            android:exported="false" />
+        <activity
+            android:name=".admin.knowsad.gamesad.ActivityAdminZal"
+            android:exported="false" />
+        <activity
+            android:name=".admin.knowsad.gamesad.ActivityAdminSploch"
+            android:exported="false" />
+        <activity
+            android:name=".admin.knowsad.gamesad.ActivityAdminPod"
+            android:exported="false" />
+        <activity
+            android:name=".admin.knowsad.gamesad.ActivityAdminLid"
+            android:exported="false" />
+        <activity
+            android:name=".admin.knowsad.gamesad.ActivityAdminAt"
+            android:exported="false" />
+        <activity
+            android:name=".admin.knowsad.ActivityAdminGames"
+            android:exported="false" />
+        <activity
+            android:name=".admin.ActivityAdminKnows"
+            android:exported="false" />
+        <activity
+            android:name=".admin.ActivityAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".vojat.ActivityInfo"
+            android:exported="false" />
+        <activity
+            android:name=".knows.ActivitySongs"
+            android:exported="false" />
+        <activity
+            android:name=".knows.ActivityLights"
+            android:exported="false" />
+        <activity
+            android:name=".knows.ActivityOD"
+            android:exported="false" />
+        <activity
+            android:name=".knows.ActivityKTD"
+            android:exported="false" />
+        <activity
+            android:name=".games.ActivitySploch"
+            android:exported="false" />
+        <activity
+            android:name=".games.ActivityPod"
+            android:exported="false" />
+        <activity
+            android:name=".games.ActivityLid"
+            android:exported="false" />
+        <activity
+            android:name=".games.ActivityZnak"
+            android:exported="false" />
+        <activity
+            android:name=".games.ActivityZal"
+            android:exported="false" />
+        <activity
+            android:name=".games.ActivityAt"
+            android:exported="false" />
+        <activity
+            android:name=".knows.ActivityGame"
+            android:exported="false" />
+        <activity
+            android:name=".log.ActivityReg"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".main.ActivityKnows"
+            android:exported="false" />
+        <activity
+            android:name=".log.ActivityAuth"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".main.ActivityVojat"
+            android:exported="false" />
+        <activity
+            android:name=".main.MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

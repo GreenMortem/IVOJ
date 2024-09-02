@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "803839269867",
+    "firebase_url": "https://ivojbase-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "ivojbase",
+    "storage_bucket": "ivojbase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:803839269867:android:103cbd3264bf517503d7ae",
+        "android_client_info": {
+          "package_name": "com.example.vojdip"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAPPeFi6uCJolnWx3Q0ban7ZUU_OvpiOo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

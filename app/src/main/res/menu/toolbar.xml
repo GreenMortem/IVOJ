@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Пожарный список"
+        android:id="@+id/Fire"
+        android:orderInCategory="1"
+        />
+    <item
+        android:title="Медицинский список"
+        android:id="@+id/Med"
+        android:orderInCategory="2"
+        />
+    <item
+        android:title="Книга регистрации"
+        android:id="@+id/Reg"
+        android:orderInCategory="3"
+        />
+
+</menu>

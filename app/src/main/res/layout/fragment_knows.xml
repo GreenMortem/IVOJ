@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fon"
+    tools:context=".vojat.FragmentKnows">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/bnGames"
+
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="150dp"
+            android:backgroundTint="@color/yellow"
+            android:text="Игры"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/bnKTD"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/yellow"
+            android:text="КТД"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/bnOD"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/yellow"
+            android:text="ОД"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/bnLight"
+
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/yellow"
+            android:text="Огонки"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/bnSongs"
+
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/yellow"
+            android:text="Песенник"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+
+</FrameLayout>

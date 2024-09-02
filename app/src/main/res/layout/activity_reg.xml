@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fon"
+    tools:context=".log.ActivityReg">
+
+    <TextView
+        android:id="@+id/tvReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="Регистрация"
+        android:textColor="#EB9C40"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.060000002" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.55">>
+
+        <LinearLayout
+            android:id="@+id/llReg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FEFEFE"
+            android:backgroundTint="#FEFEFE"
+            android:orientation="vertical">>
+
+            <EditText
+                android:id="@+id/etNameReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Ваше имя"
+                android:inputType="text"
+                android:textColor="#040404"
+                android:textColorHint="#6C6C6C" />
+
+            <EditText
+                android:id="@+id/etSernameReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Ваша фамилия"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:textColorHint="#6C6C6C" />
+
+            <EditText
+                android:id="@+id/etPhoneReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Введите ва телефон"
+                android:inputType="phone"
+                android:textColor="#000000"
+                android:textColorHint="#6C6C6C" />
+
+            <EditText
+                android:id="@+id/etemailReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Ваша Email"
+                android:inputType="textEmailAddress"
+                android:textColor="#000000"
+                android:textColorHint="#6C6C6C" />
+
+            <EditText
+                android:id="@+id/etPasReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Ваш пароль (Не менее 6 символов)"
+                android:inputType="textPassword"
+                android:textColor="#000000"
+                android:textColorHint="#6C6C6C" />
+
+            <Button
+                android:id="@+id/bnRegistre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#D9D9D9"
+                android:text="Зарегестрироваться"
+                android:textColor="#000000"
+                android:textColorHint="#000000" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/bnAuthentication"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#D9D9D9"
+                android:text="Войти"
+                android:textColor="#000000"
+                android:textColorHint="#000000" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
